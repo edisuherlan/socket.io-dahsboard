@@ -18,19 +18,20 @@ Proyek ini adalah aplikasi menampilkan data berupa tabel dan dashboard berbasis 
 
 ## 📂 Struktur Folder
 ```
-chat_app2/
+dashboard/
 │-- public/
-│   │-- index.php  # Halaman utama chat
+│   │-- index.php  # Halaman utama dashboard
 │   │-- assets/
 │   │   │-- style.css  # CSS untuk tampilan
 │   │-- js/
 │   │   │-- chat.js  # Logika komunikasi dengan Socket.io
 │-- server/
-│   │-- server.js  # Server WebSocket dengan Node.js
-│   │-- insert.php  # API untuk menambahkan pesan
-│   │-- fetch.php  # API untuk mengambil pesan
-│-- database/
-│   │-- db.sql  # File untuk struktur database (jika ada)
+│   │-- db.php  # Koneksi database
+│   │-- delete.php  # Halaman hapus data
+│   │-- insert.php  # Halaman tambah data
+│   │-- fetch.php  # Query data ke json
+│-- ws-server/
+│   │-- server.js  # Server socket.io
 │-- README.md  # Dokumentasi proyek
 ```
 
