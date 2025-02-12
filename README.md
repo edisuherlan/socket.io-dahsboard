@@ -1,10 +1,10 @@
 # Chat Multi-User dengan Socket.io dan PHP Native
 
 ## 📌 Deskripsi Proyek
-Proyek ini adalah aplikasi chat multi-user berbasis web menggunakan **PHP Native** dan **Socket.io**. Aplikasi ini memungkinkan pengguna untuk berkomunikasi secara real-time tanpa perlu melakukan refresh halaman.
+Proyek ini adalah aplikasi menampilkan data berupa tabel dan dashboard berbasis web menggunakan **PHP Native** dan **Socket.io**. Aplikasi ini memungkinkan data dari database dapat secara real-time ditampilkan tanpa perlu melakukan refresh halaman.
 
 ## 🚀 Fitur
-- Chat multi-user dengan WebSocket
+- Kenampilkan data dengan WebSocket
 - Komunikasi real-time menggunakan **Socket.io**
 - Interface sederhana berbasis **HTML, CSS, dan JavaScript**
 - Backend menggunakan **PHP Native**
@@ -39,7 +39,7 @@ chat_app2/
 ### 1️⃣ **Clone Repository**
 ```bash
 git clone https://github.com/edisuherlan/socket.io-dahsboard.git
-cd chat_app2
+cd dashboard
 ```
 
 ### 2️⃣ **Setup Backend (PHP & MySQL)**
@@ -60,7 +60,7 @@ node server.js
 > Server akan berjalan di `http://localhost:3000`
 
 ### 4️⃣ **Jalankan Aplikasi Chat**
-- Akses `http://localhost/pemrograman_jaringan/websocket/chat_app2/public/` di browser.
+- Akses `http://localhost/dashboard/public/` di browser.
 - Buka beberapa tab untuk menguji chat multi-user secara real-time.
 
 ## 🎯 Cara Menggunakan
