@@ -1,55 +1,76 @@
-# 📡 Realtime Mahasiswa Dashboard dengan Socket.io & MySQL
+# Chat Multi-User dengan Socket.io dan PHP Native
 
-Proyek ini adalah **dashboard realtime** untuk menampilkan data mahasiswa dan total mahasiswa per prodi menggunakan **PHP native**, **Socket.io**, dan **MySQL**.
+## 📌 Deskripsi Proyek
+Proyek ini adalah aplikasi chat multi-user berbasis web menggunakan **PHP Native** dan **Socket.io**. Aplikasi ini memungkinkan pengguna untuk berkomunikasi secara real-time tanpa perlu melakukan refresh halaman.
 
-## 📥 Instalasi
+## 🚀 Fitur
+- Chat multi-user dengan WebSocket
+- Komunikasi real-time menggunakan **Socket.io**
+- Interface sederhana berbasis **HTML, CSS, dan JavaScript**
+- Backend menggunakan **PHP Native**
+
+## 🛠️ Teknologi yang Digunakan
+- **PHP** (Backend)
+- **Node.js & Express.js** (WebSocket Server)
+- **Socket.io** (Real-time communication)
+- **MySQL** (Database, jika digunakan untuk menyimpan chat)
+- **Bootstrap** (UI Framework)
+
+## 📂 Struktur Folder
+```
+chat_app2/
+│-- public/
+│   │-- index.php  # Halaman utama chat
+│   │-- assets/
+│   │   │-- style.css  # CSS untuk tampilan
+│   │-- js/
+│   │   │-- chat.js  # Logika komunikasi dengan Socket.io
+│-- server/
+│   │-- server.js  # Server WebSocket dengan Node.js
+│   │-- insert.php  # API untuk menambahkan pesan
+│   │-- fetch.php  # API untuk mengambil pesan
+│-- database/
+│   │-- db.sql  # File untuk struktur database (jika ada)
+│-- README.md  # Dokumentasi proyek
+```
+
+## 🔧 Cara Instalasi dan Menjalankan
 
 ### 1️⃣ **Clone Repository**
-Jalankan perintah berikut di terminal atau Command Prompt:
-
+```bash
 git clone https://github.com/edisuherlan/socket.io-dahsboard.git
-cd reponame
+cd chat_app2
+```
 
+### 2️⃣ **Setup Backend (PHP & MySQL)**
+- Pastikan **Apache & MySQL** berjalan (gunakan **XAMPP/Laragon** jika lokal).
+- Buat database baru di **phpMyAdmin**.
+- Impor `database/db.sql` ke MySQL.
+- Sesuaikan konfigurasi database di file `server/insert.php` dan `server/fetch.php`.
 
-2️⃣ Setup Database
-Buat database di MySQL dengan nama db_dashboard.
-Import file database.sql yang terdapat dalam repositori ini ke dalam MySQL.
-
-mysql -u root -p db_dashboard < database.sql
-
-Sesuaikan root dengan username MySQL Anda.
-
-Cek tabel mahasiswa setelah import, pastikan struktur sudah sesuai.
-3️⃣ Konfigurasi Backend
-Pastikan Anda memiliki PHP dan MySQL terinstal.
-Jalankan server PHP dengan Laragon atau menggunakan terminal:
-
-php -S localhost:8000 -t public
-
-4️⃣ Menjalankan Server WebSocket
-Pastikan Anda memiliki Node.js (Cek dengan node -v di terminal).
-Install dependencies dengan perintah berikut:
-
-npm install
-
-Jalankan server WebSocket:
-
+### 3️⃣ **Menjalankan Server WebSocket (Node.js)**
+- Install **Node.js** jika belum terpasang.
+- Jalankan perintah berikut di terminal:
+```bash
+cd server
+npm install express socket.io mysql2 cors
 node server.js
+```
 
-Server akan berjalan di http://localhost:3000
+> Server akan berjalan di `http://localhost:3000`
 
-🚀 Menjalankan Aplikasi
-Pastikan PHP server dan WebSocket server berjalan.
-Buka browser dan akses:
+### 4️⃣ **Jalankan Aplikasi Chat**
+- Akses `http://localhost/pemrograman_jaringan/websocket/chat_app2/public/` di browser.
+- Buka beberapa tab untuk menguji chat multi-user secara real-time.
 
-http://localhost/yourdirectory/public/
+## 🎯 Cara Menggunakan
+1. Buka aplikasi di browser.
+2. Masukkan nama dan mulai mengirim pesan.
+3. Cobalah membuka aplikasi di dua atau lebih tab/browser untuk melihat komunikasi real-time.
 
-Fitur Realtime:
-Tambah data mahasiswa → akan langsung diperbarui di semua client.
-Hapus mahasiswa → data diperbarui otomatis.
-Total Mahasiswa per Prodi ditampilkan secara real-time.
-📌 Fitur
-✅ CRUD Mahasiswa (Create, Read, Delete)
-✅ Realtime Total Mahasiswa per Prodi
-✅ WebSocket dengan Socket.io
-✅ Backend PHP + MySQL
+## 📜 Lisensi
+Proyek ini bersifat open-source dan dapat digunakan serta dimodifikasi sesuai kebutuhan.
+
+---
+**🚀 Selamat mencoba! Jika ada pertanyaan, jangan ragu untuk bertanya!**
+
