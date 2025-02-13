@@ -21,10 +21,6 @@ Proyek ini adalah aplikasi menampilkan data berupa tabel dan dashboard berbasis 
 dashboard/
 │-- public/
 │   │-- index.php  # Halaman utama dashboard
-│   │-- assets/
-│   │   │-- style.css  # CSS untuk tampilan
-│   │-- js/
-│   │   │-- chat.js  # Logika komunikasi dengan Socket.io
 │-- server/
 │   │-- db.php  # Koneksi database
 │   │-- delete.php  # Halaman hapus data
