@@ -50,6 +50,7 @@ cd dashboard
 - Jalankan perintah berikut di terminal:
 ```bash
 cd server
+npm init -y
 npm install express socket.io mysql2 cors
 node server.js
 ```
