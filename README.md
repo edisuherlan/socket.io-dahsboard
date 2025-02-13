@@ -58,11 +58,11 @@ node server.js
 
 ### 4️⃣ **Jalankan Aplikasi Chat**
 - Akses `http://localhost/dashboard/public/` di browser.
-- Buka beberapa tab untuk menguji chat multi-user secara real-time.
+- Buka beberapa tab untuk menguji tampilan dashboard secara real-time.
 
 ## 🎯 Cara Menggunakan
 1. Buka aplikasi di browser.
-2. Masukkan nama dan mulai mengirim pesan.
+2. Tambahkan/Hapus data mahasiswa dan lihat perubahan realtime yang terjadi.
 3. Cobalah membuka aplikasi di dua atau lebih tab/browser untuk melihat komunikasi real-time.
 
 ## 📜 Lisensi
