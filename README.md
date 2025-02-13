@@ -1,4 +1,4 @@
-# Chat Multi-User dengan Socket.io dan PHP Native
+# Dashboard Realtime dengan PHP Native & Socket.io
 
 ## 📌 Deskripsi Proyek
 Proyek ini adalah aplikasi menampilkan data berupa tabel dan dashboard berbasis web menggunakan **PHP Native** dan **Socket.io**. Aplikasi ini memungkinkan data dari database dapat secara real-time ditampilkan tanpa perlu melakukan refresh halaman.
