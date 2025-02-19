@@ -13,7 +13,7 @@ Proyek ini adalah aplikasi menampilkan data berupa tabel dan dashboard berbasis 
 - **PHP** (Backend)
 - **Node.js & Express.js** (WebSocket Server)
 - **Socket.io** (Real-time communication)
-- **MySQL** (Database, jika digunakan untuk menyimpan chat)
+- **MySQL** (Database, digunakan untuk menyimpan database)
 - **Bootstrap** (UI Framework)
 
 ## 📂 Struktur Folder
@@ -58,7 +58,7 @@ node server.js
 
 > Server akan berjalan di `http://localhost:3000`
 
-### 4️⃣ **Jalankan Aplikasi Chat**
+### 4️⃣ **Jalankan Aplikasi Dashboard**
 - Akses `http://localhost/dashboard/public/` di browser.
 - Buka beberapa tab untuk menguji tampilan dashboard secara real-time.
 
